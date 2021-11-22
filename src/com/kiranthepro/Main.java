@@ -1,3 +1,5 @@
+//doesent show raffle number yet!!!!. good exceptiions and stuff, uuse darj mode
+//check is very good, but it doesn't work
 package com.kiranthepro;
 
 import java.io.BufferedReader;
@@ -31,12 +33,13 @@ public class Main {
     public static void purchaseTicket() {
         Random random = new Random();
         String name = getInput("What is your name?");
-        tickets.put(name, random.nextInt()*100);
+        tickets.put(name, random.nextInt(999-100)+100);
 
     }
 
     public static boolean checkTicket(String name) {
 //        check if ticket number under name is prime
+        System.out.println(tickets.get(name));
         return false;
     }
 
